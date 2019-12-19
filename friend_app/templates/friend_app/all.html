@@ -1,0 +1,13 @@
+{%extends 'friend_app/base.html'%}
+<!-- {%  load static %} -->
+
+
+{%  block title %}
+    My Friends
+{%   endblock   %}
+
+{%  block main_content    %}
+{% for name in namelist %}
+{{name}}<br>
+{% endfor %}
+{%  endblock    %}
